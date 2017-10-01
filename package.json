@@ -4,11 +4,12 @@
   "description": "## Criação do projeto 1. ``` npm init -y ``` 2. ``` git init ```",
   "main": "index.js",
   "scripts": {
+    "start": "./node_modules/.bin/ts-node ./server/server.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "body-parser": "^1.18.2",
     "express": "^4.16.1",
