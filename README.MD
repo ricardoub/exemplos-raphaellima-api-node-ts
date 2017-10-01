@@ -24,10 +24,21 @@ npm install @types/bluebird@ts2.2
 npm i sequelize sequelize-cli -S
 npm i sequelize @types/sequelize -D
 ```
-
+Para trocar a senha do postgres siga o exemplo em [vivaolinux](https://www.vivaolinux.com.br/dica/Alterando-senha-inicial-do-PostgreSQL-[Ubuntu]/)
 ---
 
 # Conteúdos dos arquivos utilizados no passo a passo do projeto
 
-### Arquivos da aplicação
-#### routes/personRoutes.ts
+## Arquivos de configuração da aplicação
+### tsconfig.json
+
+```
+{
+ "compilerOptions": {  "target": "es5",  "module": "commonjs",  "outDir": "build",  "typeRoots": [ "../node_modules/@types" ],  "types": [ "node" ]  },
+ "include": [ "server/**/*.ts", "server/*.ts" ],
+ "exclude":[ "node_modules" ],
+ "buildOnSave": true,
+ "compileOnSave": true
+}
+
+```
